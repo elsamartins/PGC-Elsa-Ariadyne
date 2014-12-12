@@ -2,26 +2,26 @@
 
 #Plano de Gerenciamento de Configuração#
 
-#LITE – PGC – v.1.1.1#
+#LITE_PGC_1.1#
 
 # Histórico de Versões
 
 <table>
   <tr>
-    <td>Data</td>
-    <td>Versão</td>
-    <td>Descrição</td>
-    <td>Autor</td>
+    <td><b>Data</td>
+    <td><b>Versão</td>
+    <td><b>Descrição</td>
+    <td><b>Autor</td>
   </tr>
   <tr>
     <td>08/12/2014</td>
-    <td>V.1.1.0</td>
+    <td>V.1.0</td>
     <td>Criação do documento</td>
     <td>Elsa Martins</td>
   </tr>
   <tr>
     <td>12/12/2014</td>
-    <td>V.1.1.1</td>
+    <td>V.1.1</td>
     <td>Edição dos itens 1, 3 e 5</td>
     <td>Ariadyne Dantas</td>
   </tr>
@@ -46,8 +46,8 @@ Este plano deverá ser seguido pela gerência de configuração durante todo o c
 
 <table>
   <tr>
-    <td>Termo</td>
-    <td>Significado</td>
+    <td><b>Termo</td>
+    <td><b>Significado</td>
   </tr>
   <tr>
     <td>GC</td>
@@ -75,8 +75,8 @@ Este plano deverá ser seguido pela gerência de configuração durante todo o c
 
 <table>
   <tr>
-    <td>Seção</td>
-    <td>Descrição</td>
+    <td><b>Seção</td>
+    <td><b>Descrição</td>
   </tr>
   <tr>
     <td>2</td>
@@ -112,9 +112,9 @@ Este plano deverá ser seguido pela gerência de configuração durante todo o c
 ### 2.2.1 Organização
 <table>
   <tr>
-    <td>Papéis</td>
-    <td>Equipe</td>
-    <td>Responsabilidade</td>
+    <td><b>Papéis</td>
+    <td><b>Equipe</td>
+    <td><b>Responsabilidade</td>
   </tr>
   <tr>
     <td>Gerente de Configuração</td>
@@ -151,10 +151,10 @@ Atualizar Solicitação de Mudança</td>
 
 <table>
   <tr>
-    <td>Software</td>
-    <td>Propósito</td>
-    <td>Ambiente</td>
-    <td>Release/Versão</td>
+    <td><b>Software</td>
+    <td><b>Propósito</td>
+    <td><b>Ambiente</td>
+    <td><b>Release/Versão</td>
   </tr>
   <tr>
     <td>Git</td>
@@ -177,10 +177,10 @@ Acessa o repositório local.</td>
 
 <table>
   <tr>
-    <td>Software</td>
-    <td>Propósito</td>
-    <td>Ambiente</td>
-    <td>Release/Versão</td>
+    <td><b>Software</td>
+    <td><b>Propósito</td>
+    <td><b>Ambiente</td>
+    <td><b>Release/Versão</td>
   </tr>
   <tr>
     <td>Sistema Operacional</td>
@@ -237,9 +237,9 @@ Acessa o repositório local.</td>
 
 <table>
   <tr>
-    <td>Ambiente</td>
-    <td>Descrição</td>
-    <td>Transição</td>
+    <td><b>Ambiente</td>
+    <td><b>Descrição</td>
+    <td><b>Transição</td>
   </tr>
   <tr>
     <td>Desenvolvimento</td>
@@ -265,39 +265,39 @@ Acessa o repositório local.</td>
 
 ### 3.1.1 Métodos de Identificação
 
-•	Os artefatos do projeto deverão seguir a seguinte estrutura:
-<Nome do projeto> - <Nome do artefato>_<versão>
+•	Os artefatos do projeto deverão seguir a seguinte estrutura:<br />
+(NomeDoProjeto)_ (NomeDoArtefato)_(revisão)<br />
 
-•	Os commits deverão seguir a seguinte estrutura:
-Para tasks:
-<código da subtask> #comment <breve descrição do código desenvolvido>
-<código da subtask> #resolved <breve descrição do código desenvolvido>
+•	Os commits deverão seguir a seguinte estrutura:<br />
+Para tasks:<br />
+(código da subtask) #comment (breve descrição do código desenvolvido)<br />
+(código da subtask) #resolved (breve descrição do código desenvolvido)<br />
 
-Para bugs:
-<código do bug> #comment <breve descrição de modificações relacionadas ao bug>
-<código do bug encerrado> #resolved <breve descrição da solução realizada para resolver o bug >
+Para bugs:<br />
+(código do bug) #comment (breve descrição de modificações relacionadas ao bug)<br />
+(código do bug encerrado) #resolved (breve descrição da solução realizada para resolver o bug)<br />
 
-•	Os branchs do projeto deverão seguir a seguinte estrutura:
-<aplicação><versão>_<módulo>
+•	As branches do projeto deverão seguir a seguinte estrutura:<br />
+(NomeDoProjeto)_ (módulo)_(revisão)<br />
 
-•	As Tags do projeto deverão seguir a seguinte estrutura:
-<versão> - <ID >
+•	As Tags do projeto deverão seguir a seguinte estrutura:<br />
+(NomeDoProjeto)_ (NomenclaturaOficial)_(RevisãoAtualDoGIT)<br />
 
-•	As versões deverão seguir a seguinte estrutura:
-<nº base>.<nº da biblioteca>.<correções de bugs>
+•	A nomeclatura das versões oficiais deverão seguir a seguinte estrutura:<br />
+(nº base).<nº da biblioteca>.<correções de bugs><br />
 
-Onde: 
-Base: Indica grandes alterações na plataforma;
-Bibliotecas: Este dígito representa alterações nas bibliotecas daquela versão, podendo existir adições de métodos, mudanças de comportamento ou até métodos deprecados;
-Correções de bugs: Indica correções realizadas para resolver bugs encontrados na versão corrente;
+Onde:<br />
+Base: Indica grandes alterações na arquitetura;<br />
+Bibliotecas: Este dígito representa alterações nos componentes (bibliotecas, .dll);<br />
+Correções de bugs: Indica correções realizadas para resolver bugs encontrados na versão corrente;<br />
 
 ### 3.1.2 Itens de Configuração
 
 <table>
   <tr>
-    <td>Item (ou Tipo de Item)</td>
-    <td>Responsável na equipe</td>
-    <td>Inclusão em Baseline</td>
+    <td><b>Item (ou Tipo de Item)</td>
+    <td><b>Responsável na equipe</td>
+    <td><b>Inclusão em Baseline</td>
   </tr>
   <tr>
     <td>Cronograma do projeto</td>
@@ -358,8 +358,8 @@ As solicitações de mudanças nas "Baselines" devem ser registradas na ferramen
 
 <table>
   <tr>
-    <td>Responsáveis:</td>
-    <td>Funções:</td>
+    <td><b>Responsáveis:</td>
+    <td><b>Funções:</td>
   </tr>
   <tr>
     <td>Analista de Sistemas</td>
@@ -381,6 +381,39 @@ As solicitações de mudanças nas "Baselines" devem ser registradas na ferramen
 ## 4.1 Padrão de Estrutura de Pastas 
 
 Se em algum determinado momento do projeto a estrutura de pastas não atender as necessidades, será gerada uma adaptação e esta deverá ser descrita no Plano de Projeto.
+
+A estrutura do repositório é composta na seguinte estrutura:
+
+Git<br />
++-branches<br />
+|  +-Lite 4.1.0_VideoCard<br />
+    |  +-Acompanhamento e Controle<br />
+    |  +-Construção<br />
+    |  |  +-Análise<br />
+    |  |  +-Implementação<br />
+    |  |  +-Revisão de Código<br />
+    |  |  +-Testes<br />
+   |  +-Planejamento e Elaboração<br />
+    |  |  +-Especificação Técnica<br />
+    |  |  +-Requisitos<br />
+    |  |  +-Planejamento de Teste<br />
+    |  |  +-Planejamento de Desenvolvimento<br />
++-tags<br />
+ |  +-(IDVersão)_(IDCommit)<br />
+    |  +-Lite 4.0.0<br />
++-master<br />
+ |  +-Lite 4.1.0<br />
+    |  +-Acompanhamento e Controle<br />
+    |  +-Construção<br />
+    |  |  +-Análise<br />
+    |  |  +-Implementação<br />
+    |  |  +-Revisão de Código<br />
+    |  |  +-Testes<br />
+    |  +-Planejamento e Elaboração<br />
+    |  |  +-Especificação Técnica<br />
+    |  |  +-Requisitos<br />
+    |  |  +-Planejamento de Teste<br />
+    |  |  +-Planejamento de Desenvolvimento<br />
 
 A movimentação dos arquivos nas diferentes pastas ficará a cargo do Gerente de Configuração.
 
