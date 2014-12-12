@@ -2,7 +2,7 @@
 
 #Plano de Gerenciamento de Configuração#
 
-#LITE – PGC – v.1.0#
+#LITE – PGC – v.1.1.1#
 
 # Histórico de Versões
 
@@ -15,15 +15,15 @@
   </tr>
   <tr>
     <td>08/12/2014</td>
-    <td>V.1.0</td>
+    <td>V.1.1.0</td>
     <td>Criação do documento</td>
     <td>Elsa Martins</td>
   </tr>
   <tr>
-    <td><dd/mm/aaaa></td>
-    <td><1.1></td>
-    <td></td>
-    <td><autor></td>
+    <td>12/12/2014</td>
+    <td>V.1.1.1</td>
+    <td>Edição dos itens 1, 3 e 5</td>
+    <td>Ariadyne Dantas</td>
   </tr>
 </table>
 
@@ -31,45 +31,119 @@
 
 # 1. Introdução
 
-Este documento descreve o Plano de Gerência de Configuração para o projeto de desenvolvimento do sistema CFC – Controle de Fluxo de Cheques.
+Esse documento tem por finalidade planejar a execução do processo de Gerencia de Configuração do projeto "Diagnósticos Lite", estabelecendo normas e ferramentas que permitam gerenciar de maneira satisfatória os itens de configuração do sistema.
 
 ## 1.1 Finalidade
 
-*[Especifique a finalidade deste Plano de Gerenciamento de Configuração.]*
+A finalidade deste documento é criar um padrão a ser seguido por todos os membros da equipe com o intuito de garantir um maior controle do produto no decorrer do projeto. 
+Para que isso aconteça serão detalhados os recursos necessários (equipes, ferramentas e computadores), as responsabilidades atribuídas e o cronograma de atividades.
 
 ## 1.2 Escopo
 
-*[Uma breve descrição do escopo deste Plano de Gerenciamento de Configuração; o modelo ao qual ele está associado e tudo o que é afetado ou influenciado por este documento.]*
+Este plano deverá ser seguido pela gerência de configuração durante todo o ciclo de vida e abrangerá todos os dados relevantes definidos nos projetos relacionados ao sistema, incluindo os produtos de trabalho definidos conforme os processos de software, as ferramentas utilizadas para o desenvolvimento do software e os produtos que serão liberados para os clientes.
 
 ## 1.3 Definições, Acrônimos e Abreviações
 
-*[Esta subseção apresenta as definições de todos os termos, acrônimos e abreviações necessários para a correta interpretação do Plano de Gerenciamento de Configuração. Essas informações podem ser fornecidas mediante referência ao Glossário do projeto.]*
+<table>
+  <tr>
+    <td>Termo</td>
+    <td>Significado</td>
+  </tr>
+  <tr>
+    <td>GC</td>
+    <td>Gerência de Configuração</td>
+  </tr>
+  <tr>
+    <td>Baselines</td>
+    <td>Conjunto de itens de configuração que conseguiram um estado comprovado de estabilidade.</td>
+  </tr>
+  <tr>
+    <td>CCB</td>
+    <td>Comitê para o Controle de Mudanças.</td>
+  </tr>
+  <tr>
+    <td>COTS</td>
+    <td>Componentes de hardware e software comerciais de "prateleira"</td>
+  </tr>
+  <tr>
+    <td>Change Request</td>
+    <td>Qualquer pedido feito para alterar um produto de trabalho</td>
+  </tr>
+</table>
 
-## 1.4 Referências
+## 1.4 Visão Geral
 
-*[Esta subseção apresenta uma lista completa de todos os documentos mencionados no Plano de Gerenciamento de Configuração. Identifique os documentos por título, número de relatório (se aplicável), data e organização responsável pela publicação. Especifique as fontes a partir das quais as referências podem ser obtidas. Essas informações podem ser fornecidas por um anexo ou outro documento.]*
-
-## 1.5 Visão Geral
-
-*[Esta subseção descreve o conteúdo restante do Plano de Gerenciamento de Configuração e explica como o documento está organizado.]*
+<table>
+  <tr>
+    <td>Seção</td>
+    <td>Descrição</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Descreve os papeis e responsabilidades da gerência de configuração, ferramentas utilizadas, ambiente e infraestrutura
+</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>É apresenta o plano de configuração onde é definido como serão identificados os itens configuráveis, como será o agrupamento desses itens, as configurações bases do projeto, a estrutura do repositório e o controle de acesso.
+</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Define como serão feitas as requisições à GC, padronizando um processo a ser seguido.
+</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Define quais os treinamentos e recursos necessários para implantação da GC.
+</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Apresenta o cronograma das auditorias de configuração e o que será verificado.
+</td>
+  </tr>
+</table>
 
 # 2. Gerenciamento de Configuração de Software
 
 ## 2.1 Organização, Responsabilidades e Interfaces
 
 ### 2.2.1 Organização
-
-As seções subsequentes deste documento estão organizadas: 
-
-* Seção 2 descreve os papeis e responsabilidades da gerência de configuração, ferramentas utilizadas, ambiente e infraestrutura; 
-
-* Seção 3 é apresenta o plano de configuração onde é definido como serão identificados os itens configuráveis, como será o agrupamento desses itens, as configurações bases do projeto, a estrutura do repositório e o controle de acesso; 
-
-* Seção 4 define como serão feitas as requisições à GC, padronizando um processo a ser seguido; 
-
-* Seção 5 define quais os treinamentos e recursos necessários para implantação da GC;
-
-* Seção 6 apresenta o cronograma das auditorias de configuração e o que será verificado.
+<table>
+  <tr>
+    <td>Papéis</td>
+    <td>Equipe</td>
+    <td>Responsabilidade</td>
+  </tr>
+  <tr>
+    <td>Gerente de Configuração</td>
+    <td>Elsa Martins</td>
+    <td>Estabelecer Políticas de GC<br />
+Escrever Plano de GC<br />
+Configurar Ambiente de GC<br />
+Criar Espaços de Trabalho de Integração<br />
+Criar Baselines<br />
+Promover Baselines</td>
+  </tr>
+  <tr>
+    <td>CCM</td>
+    <td>Ariadyne Dantas</td>
+    <td>Estabelecer Processo de Controle de Mudanças<br />
+Revisar Solicitação de Mudança</td>
+  </tr>
+  <tr>
+    <td>Desenvolvedor</td>
+    <td>Elsa Martins</td>
+    <td>Seguir os padrões e procedimentos definidos no Plano de Gerência de Configuração</td>
+  </tr>
+  <tr>
+    <td>Solicitantes</td>
+    <td>Ariadyne Dantas</td>
+    <td>Enviar Solicitação de Mudança<br />
+Atualizar Solicitação de Mudança</td>
+  </tr>
+</table>
 
 ## 2.2 Ferramentas, Ambiente e Infraestrutura
 
@@ -191,15 +265,33 @@ Acessa o repositório local.</td>
 
 ### 3.1.1 Métodos de Identificação
 
-*[Descreva como os artefatos do projeto ou produto devem ser nomeados, marcados e numerados. O esquema de identificação deve abranger o hardware, o software do sistema, os produtos de terceiros (COTS) e todos os artefatos de desenvolvimento de aplicativos listados na estrutura de diretórios do produto; por exemplo, planos, modelos, componentes, software de teste, resultados e dados, executáveis e assim por diante.]*
+•	Os artefatos do projeto deverão seguir a seguinte estrutura:
+<Nome do projeto> - <Nome do artefato>_<versão>
+
+•	Os commits deverão seguir a seguinte estrutura:
+Para tasks:
+<código da subtask> #comment <breve descrição do código desenvolvido>
+<código da subtask> #resolved <breve descrição do código desenvolvido>
+
+Para bugs:
+<código do bug> #comment <breve descrição de modificações relacionadas ao bug>
+<código do bug encerrado> #resolved <breve descrição da solução realizada para resolver o bug >
+
+•	Os branchs do projeto deverão seguir a seguinte estrutura:
+<aplicação><versão>_<módulo>
+
+•	As Tags do projeto deverão seguir a seguinte estrutura:
+<versão> - <ID >
+
+•	As versões deverão seguir a seguinte estrutura:
+<nº base>.<nº da biblioteca>.<correções de bugs>
+
+Onde: 
+Base: Indica grandes alterações na plataforma;
+Bibliotecas: Este dígito representa alterações nas bibliotecas daquela versão, podendo existir adições de métodos, mudanças de comportamento ou até métodos deprecados;
+Correções de bugs: Indica correções realizadas para resolver bugs encontrados na versão corrente;
 
 ### 3.1.2 Itens de Configuração
-
-*[Relacionar os artefatos ou grupos de artefatos, separando por tipo, modulo ou subsistema, responsável ou momento em que deverão ser incluídos em baselines.*
-
-* *"Inclusão em Baseline" em branco significa que o grupo de artefatos não participará de baseline. Pode ser expresso como uma data ou identificador de uma baseline, fase ou ponto de controle*
-
-* *"Responsável": indicar nominalmente, sempre que possível]*
 
 <table>
   <tr>
@@ -208,21 +300,52 @@ Acessa o repositório local.</td>
     <td>Inclusão em Baseline</td>
   </tr>
   <tr>
-    <td><grupo de itens de configuração></td>
-    <td><nome do responsável></td>
-    <td><momento a partir do qual o conjunto de artefatos será incluído em baseline></td>
+    <td>Cronograma do projeto</td>
+    <td>Gerente de projetos</td>
+    <td>Quando criado o documento e quando é feito alguma alteração no documento sendo previamente acordado com o cliente</td>
+  </tr>
+  <tr>
+    <td>Documento de requisitos do projeto</td>
+    <td>Analista de requisitos</td>
+    <td>Quando criado o documento e quando solicitado uma mudança nos requisitos e o mesmo for devidamente identificado, estimado e validado, gerando assim uma nova versão do documento.</td>
+  </tr>
+  <tr>
+    <td>Especificação de caso de uso</td>
+    <td>Analista de sistemas</td>
+    <td>Quando criado o documento e quando houver alguma alteração tendo sido validada pelo cliente gerando assim uma nova versão do documento.</td>
+  </tr>
+  <tr>
+    <td>Caso de teste</td>
+    <td>Analista de teste</td>
+    <td>Quando criado o documento e quando houver alguma alteração tendo sido validada pelo cliente gerando assim uma nova versão do documento.</td>
+  </tr>
+  <tr>
+    <td>Script de testes</td>
+    <td>Analista de teste</td>
+    <td>Quando o documento é criado e quando há uma alteração no escopo do projeto previamente validada pelo cliente. </td>
+  </tr>
+  <tr>
+    <td>Plano de teste</td>
+    <td>Analista de teste</td>
+    <td>Quando criado o documento e quando houver alguma alteração tendo sido validada pelo cliente gerando assim uma nova versão do documento.</td>
+  </tr>
+  <tr>
+    <td>Plano de gerenciamento de configuração</td>
+    <td>Gerente de configuração </td>
+    <td>Quando criado o documento e quando houver alguma alteração tendo sido validada pelo cliente gerando assim uma nova versão do documento.</td>
   </tr>
 </table>
 
-
 ### 3.1.3 Baselines do Projeto
 
-*[As baselines funcionam como um padrão oficial no qual os trabalhos subseqüentes são baseados. Somente mudanças autorizadas podem ser efetuadas nas baselines.* *Descreva em que pontos do ciclo de vida do projeto ou produto as baselines devem ser estabelecidas. As baselines mais comuns devem ser definidas ao final de cada uma das fases de Iniciação, Elaboração, Construção e Transição. Elas também podem ser geradas no final de iterações ocorridas dentro das várias fases ou com freqüência ainda maior.* *Descreva quem autoriza uma baseline e o que ela contém.]*
+Baselines de projeto 
+•	O gerente de configuração autoriza a geração da baselines do projeto, porém quem repassa a ele a necessidade da geração é o analista de sistemas.
+•	Gerada a cada marco definido no cronograma.
 
-### 3.1.4 Estrutura do Repositório de Versões
-
-*[Descreva a organização de diretórios do seu repositório e que itens/arquivos devem ser armazenados em cada diretório.]*
-
+Baselines de produto	
+•	O gerente de configuração autoriza a geração da baselines do produto, porém quem repassa a ele a necessidade da geração é o analista de sistemas.
+•	Gerada no final de cada iteração
+  
 ## 3.2 Controle de Configuração e Mudança
 
 ### 3.2.1 Processamento e Aprovação de Solicitações de Mudança
@@ -257,52 +380,41 @@ As solicitações de mudanças nas "Baselines" devem ser registradas na ferramen
 
 ## 4.1 Padrão de Estrutura de Pastas 
 
-O projeto deverá seguir a seguinte estrutura de pastas e subpastas no repositório:
-
-<table>
-  <tr>
-    <td>Git <br />
-+-branches <br />
-|  +-Lite 4.1.0_VideoCard <br />
-    |  +-Acompanhamento e Controle <br />
-    |  +-Construção <br />
-    |  |  +-Análise <br />
-    |  |  +-Implementação <br /> 
-    |  |  +-Revisão de Código <br />
-    |  |  +-Testes <br />
-   |  +-Planejamento e Elaboração <br />
-    |  |  +-Especificação Técnica <br />
-    |  |  +-Requisitos <br />
-    |  |  +-Planejamento de Teste <br />
-    |  |  +-Planejamento de Desenvolvimento <br />
-+-tags <br />
- |  +-<VERSÃO > - <ID > <br />
-    |  +-Lite 4.0.0 <br />
-+-master <br />
- |  +-Lite 4.1.0 <br />
-    |  +-Acompanhamento e Controle <br />
-    |  +-Construção <br />
-    |  |  +-Análise <br />
-    |  |  +-Implementação <br />	
-    |  |  +-Revisão de Código <br />
-    |  |  +-Testes <br />
-    |  +-Planejamento e Elaboração <br />
-    |  |  +-Especificação Técnica <br />
-    |  |  +-Requisitos <br />
-    |  |  +-Planejamento de Teste <br />
-    |  |  +-Planejamento de Desenvolvimento <br />
-</td>
-  </tr>
-</table>
-
-
 Se em algum determinado momento do projeto a estrutura de pastas não atender as necessidades, será gerada uma adaptação e esta deverá ser descrita no Plano de Projeto.
 
 A movimentação dos arquivos nas diferentes pastas ficará a cargo do Gerente de Configuração.
 
 # 5. Treinamento e Recursos
 
-*[Descreva as ferramentas de software, o pessoal e o treinamento necessários para implementar as atividades de CM especificadas.]*
+* As ferramentas utilizadas para no processo de desenvolvimento serão:
+
+    * VMWare Player
+
+    * MS-Office
+
+    * MS-Project
+
+    * Qt
+
+    * Visual Studio
+
+    * Enterprise Architect
+
+    * JIRA
+
+    * Git
+
+    * TortoiseGit
+
+* A equipe de desenvolvimento terá treinamento nas ferramentas necessárias para o desenvolvimento do sistema, como: VMWare Player, Visual Studio e Qt.
+
+* A equipe de Analistas terá treinamento nas ferramentas necessárias para a criação dos casos de uso e casos de teste, como: Enterprise Architect.
+
+* O gerente de projetos terá um curso aprofundado na ferramenta MS-Project
+
+* Toda a equipe, inclusive a equipe de gestão de configuração, fará treinamento nas ferramentas: JIRA, Ms-Office, Git e TortoiseGit.
+
+* As equipes individualmente deverão promover workshops para nivelamento do conhecimento entre eles
 
 # 6. Auditorias de Configuração
 
